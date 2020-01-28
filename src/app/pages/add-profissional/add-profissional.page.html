@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profissional</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #fc="ngForm" (ngSubmit)="onsubmit(fc)">
+    <ion-item>
+      <ion-label position="floating">Codigo de Identificação</ion-label>
+      <ion-input type="text" [(ngModel)]="profissional.codigo" name="codigo" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="profissional.nome" name="nome" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Sobrenome</ion-label>
+      <ion-input type="text" [(ngModel)]="profissional.sobrenome" name="sobrenome" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">RG</ion-label>
+      <ion-input type="number" [(ngModel)]="profissional.rg" name="rg" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="number" [(ngModel)]="profissional.cpf" name="cpf" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Telefone</ion-label>
+      <ion-input type="number" [(ngModel)]="profissional.telefone" name="telefone" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Endereço</ion-label>
+      <ion-input type="text" [(ngModel)]="profissional.endereco" name="endereco" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Bairro</ion-label>
+      <ion-input type="text" [(ngModel)]="profissional.bairro" name="bairro" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Data de Admissão</ion-label>
+      <ion-input type="text" [(ngModel)]="profissional.admissao" name="admissao" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Função</ion-label>
+      <ion-input type="text" [(ngModel)]="profissional.funcao" name="funcao" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button type="submit" color="primary">Salvar</ion-button>
+      <ion-button type="reset" color="danger" routerLink="/">Cancelar</ion-button>
+    </ion-item>
+  </form>
+</ion-content>

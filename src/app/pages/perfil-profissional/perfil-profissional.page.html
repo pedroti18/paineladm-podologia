@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profissionais</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-text>
+      <h4>ID: {{profissional.codigo}}</h4>
+      <h4>Nome: {{profissional.nome}}</h4>
+      <p>Sobrenome: {{profissional.sobrenome}}</p>
+      <p>RG: {{profissional.rg}}</p>
+      <p>CPF: {{profissional.cpf}}</p>
+      <p>Telefone: {{profissional.telefone}}</p>
+      <p>Endereço: {{profissional.endereco}}</p>
+      <p>Bairro: {{profissional.bairro}}</p>
+      <p>Data de Admissão: {{profissional.admissao}}</p>
+      <p>Funcão: {{profissional.funcao}}</p>
+    </ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-button class="buttom" type="reset" color="danger" routerLink="/tabs/tab1">Inicio</ion-button>
+  </ion-item>
+</ion-content>

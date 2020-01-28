@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-text>
+      <h4>Nome: {{contato.nome}}</h4>
+      <p>Telefone: {{contato.telefone}}</p>
+      <p>E-mail: {{contato.email}}</p>
+      <p>Assunto: {{contato.assunto}}</p>
+      <p>Comentários: {{contato.comentarios}}</p>
+    </ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-button class="buttom" type="reset" color="danger" routerLink="/tabs/tab1">Inicio</ion-button>
+  </ion-item>
+</ion-content>
